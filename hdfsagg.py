@@ -25,7 +25,7 @@ def list(client,hdfs_path):
     return client.list(hdfs_path, status=False)
 
 if __name__ == '__main__':
-    client = Client("http://10.0.13.190:50070")
+    client = Client("http://*:50070")
     hdfs_path = "/warehouse/tablespace/external/hive/store_info_orc"
     list = list(client, hdfs_path)
 
